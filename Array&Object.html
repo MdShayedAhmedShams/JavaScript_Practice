@@ -1,0 +1,159 @@
+<html>
+    <head>
+        <title>Array & Object</title>
+    </head>
+    <body>
+
+        <!-- // JavaScript Object -->
+        <!-- <script>
+            var myPC = {
+                brand : "ASUS",
+                screen : 16.5,
+                isLaptop : true,
+                ram : "8 gb",
+                rom : 512
+            }
+
+            document.write(myPC.brand)
+        </script> -->
+        
+
+        <!-- // Array in -> for loop
+        <script>
+             var fruitsList = ["apple", "banana", "orange", "lemon", "melon", "watermelon", "grape", "grapefruit", "plum", "mango", "pineapple"]
+            
+             for(var i=0; i<fruitsList.length; i++){
+                document.write(i + ". " + fruitsList[i] + "<br>")
+             }
+        </script> -->
+
+        
+        <!-- // Array in -> For in loop
+        <script>
+            var fruitsList = ["apple", "banana", "orange", "lemon", "melon", "watermelon", "grape", "grapefruit", "plum", "mango", "pineapple"]
+
+            for(var item in fruitsList){
+                document.write(item + ". " + fruitsList[item] + "<br>")
+            }
+        </script> -->
+
+        <!-- // For in Loop <- in Object -->
+        <!-- <script>
+            var myPC = {
+                brand : "ASUS",
+                screen : 16.5,
+                isLaptop : true,
+                ram : "8 gb",
+                rom : 512
+            }
+
+            for(var item in myPC){
+                document.write(item + ": " + myPC[item] + "<br>")
+            }
+        </script> -->
+
+
+
+
+        <!-- //Method-> JavaScript Array CONCAT() -->
+        <!-- <script>
+           var arr1 = ['A','B','C']
+           var arr2 = ['D','E','F']
+
+           var arr3 = arr1.concat(arr2);
+           document.write(arr3)
+        </script> -->
+
+        <!-- //Method-> JavaScript Array FROM() -->
+        <!-- <script>
+            var title = "Welcome Md Shams";
+            var titleArray = Array.from(title);
+            document.write(titleArray[8])
+        </script> -->
+
+
+        <!-- //Method-> JavaScript Array FILTER() -->
+        <!-- <script>
+            var arrNum = [100,20,43,55,65,35,70,95]
+
+            var result = arrNum.filter(function(item){
+                return item>50;
+            });
+            document.write(result);
+        </script> -->
+         
+
+        <!-- //Method-> JavaScript Array FIND() -->
+        <!-- <script>
+            var arrNum = [10,20,43,55,65,35,70,95]
+
+            var result = arrNum.find(function(value){
+                return value>60;
+            });
+            document.write(result);
+        </script> -->
+
+
+        <!-- //Method-> JavaScript Array FindIndex() -->
+        <!-- <script>
+            var arrNum = [10,20,43,55,65,35,70,95]
+
+            var result = arrNum.findIndex(function(value){
+                return value>60;
+            });
+            document.write(result);
+        </script> -->
+
+
+        <!-- //Method-> JavaScript Array ForEach() -->
+        <!-- <script>
+            var arrNum = [10,20,43,55,65,35,70,95]
+            arrNum.forEach(function(item){
+                document.write(item + "<br>")
+            })
+        </script> -->
+
+        <!-- //Method-> JavaScript Array Includes() -->
+        <!-- <script>
+            var arrNum = [10,20,43,55,65,35,70,95]
+            var result = arrNum.includes(65)
+            document.write(result)
+        </script> -->
+
+        <!-- //Method-> JavaScript Array IndexOf() -->
+        <!-- <script>
+            var arrNum = [10,20,43,55,65,35,70,95]
+            var result = arrNum.indexOf(65)
+            document.write(result)
+        </script> -->
+ 
+        <!-- //Method-> JavaScript Array Push Pop -->
+        <!-- <script>
+            var arrNum = [10,20,43,55,65,35,70,95]
+            arrNum.push(100)
+            arrNum.push(110)
+            arrNum.pop()
+            document.write(arrNum)
+        </script> -->
+
+
+        <!-- //Method-> JavaScript Array Slice -->
+        <!-- <script>
+            var arrNum = [10,20,43,5,65,35,70,95]
+            var result = arrNum.slice(0,3)
+            document.write(result)
+        </script> -->
+
+
+       <!-- //Method-> JavaScript Array Push Pop -->
+       <script>
+        var arrNum = [10,20,43,5,65,35,70,95]
+        //arrNum.splice(index,removeCount,item)
+        // 20 remove
+        arrNum.splice(1,2)
+        //Add
+        arrNum.splice(4,0,50)
+        document.write(arrNum)
+    </script>
+    </body>
+</html>
